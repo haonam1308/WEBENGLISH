@@ -175,6 +175,8 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Controllers\FlashCardController.cs" />
+    <Compile Include="Controllers\HistoryController.cs" />
     <Compile Include="Controllers\UserController .cs" />
     <Compile Include="Controllers\LessonController.cs" />
     <Compile Include="Controllers\VocabularyController.cs" />
@@ -270,6 +272,10 @@
     <Content Include="Views\Lesson\Edit.cshtml" />
     <Content Include="Views\Lesson\About.cshtml" />
     <Content Include="Views\Lesson\Contact.cshtml" />
+    <Content Include="Views\FlashCard\Index.cshtml" />
+    <Content Include="Views\FlashCard\AddToFlashcard.cshtml" />
+    <Content Include="Views\FlashCard\AddNewWord.cshtml" />
+    <Content Include="Views\History\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

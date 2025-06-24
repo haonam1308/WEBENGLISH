@@ -1,42 +1,182 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Th\u00E0nh Nam\\source\\repos\\EnglishWeb\\",
+  "WorkspaceRootPath": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|c:\\users\\th\u00E0nh nam\\source\\repos\\englishweb\\englishweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\englishweb\\controllers\\flashcardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|solutionrelative:englishweb\\controllers\\flashcardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\englishweb\\models\\dbenglish.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|solutionrelative:englishweb\\models\\dbenglish.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\englishweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|solutionrelative:englishweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|C:\\Users\\Th\u00E0nh Nam\\source\\repos\\EnglishWeb\\englishweb\\views\\lesson\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|solutionrelative:englishweb\\views\\lesson\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\englishweb\\models\\dbenglish.dbml.layout||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|solutionrelative:englishweb\\models\\dbenglish.dbml.layout||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|C:\\Users\\Th\u00E0nh Nam\\source\\repos\\EnglishWeb\\englishweb\\views\\lesson\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|solutionrelative:englishweb\\views\\lesson\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\englishweb\\views\\flashcard\\addnewword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|solutionrelative:englishweb\\views\\flashcard\\addnewword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|C:\\Users\\Th\u00E0nh Nam\\source\\repos\\EnglishWeb\\englishweb\\controllers\\lessoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|d:\\git\\project\\webenglish\\englishweb\\englishweb\\views\\history\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|solutionrelative:englishweb\\views\\history\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|d:\\git\\project\\webenglish\\englishweb\\englishweb\\controllers\\historycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|solutionrelative:englishweb\\controllers\\historycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|d:\\git\\project\\webenglish\\englishweb\\englishweb\\controllers\\usercontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|solutionrelative:englishweb\\controllers\\usercontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\englishweb\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|solutionrelative:englishweb\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\englishweb\\views\\flashcard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|solutionrelative:englishweb\\views\\flashcard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\englishweb\\controllers\\vocabularycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|solutionrelative:englishweb\\controllers\\vocabularycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\englishweb\\views\\flashcard\\addtoflashcard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|solutionrelative:englishweb\\views\\flashcard\\addtoflashcard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\englishweb\\controllers\\lessoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|solutionrelative:englishweb\\controllers\\lessoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|C:\\Users\\Th\u00E0nh Nam\\source\\repos\\EnglishWeb\\englishweb\\views\\lesson\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\englishweb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|solutionrelative:englishweb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\englishweb\\views\\lesson\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|solutionrelative:englishweb\\views\\lesson\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|C:\\Users\\Th\u00E0nh Nam\\source\\repos\\EnglishWeb\\englishweb\\views\\lesson\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|solutionrelative:englishweb\\views\\lesson\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\englishweb\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|solutionrelative:englishweb\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|C:\\Users\\Th\u00E0nh Nam\\source\\repos\\EnglishWeb\\englishweb\\views\\lesson\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|solutionrelative:englishweb\\views\\lesson\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\englishweb\\views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|solutionrelative:englishweb\\views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|C:\\Users\\Th\u00E0nh Nam\\source\\repos\\EnglishWeb\\englishweb\\views\\lesson\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\englishweb\\views\\manage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|solutionrelative:englishweb\\views\\manage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\englishweb\\views\\lesson\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|solutionrelative:englishweb\\views\\lesson\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|C:\\Users\\Th\u00E0nh Nam\\source\\repos\\EnglishWeb\\englishweb\\views\\lesson\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\englishweb\\views\\lesson\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|solutionrelative:englishweb\\views\\lesson\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\englishweb\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|solutionrelative:englishweb\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\englishweb\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|solutionrelative:englishweb\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\englishweb\\views\\lesson\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|solutionrelative:englishweb\\views\\lesson\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\englishweb\\views\\lesson\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|solutionrelative:englishweb\\views\\lesson\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\englishweb\\views\\shared\\lockout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|solutionrelative:englishweb\\views\\shared\\lockout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\englishweb\\views\\vocabulary\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|solutionrelative:englishweb\\views\\vocabulary\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\englishweb\\views\\user\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|solutionrelative:englishweb\\views\\user\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\englishweb\\views\\lesson\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|solutionrelative:englishweb\\views\\lesson\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\englishweb\\content\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|solutionrelative:englishweb\\content\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\englishweb\\models\\accountviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|solutionrelative:englishweb\\models\\accountviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\englishweb\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|solutionrelative:englishweb\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\englishweb\\models\\manageviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|solutionrelative:englishweb\\models\\manageviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\englishweb\\models\\identitymodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|solutionrelative:englishweb\\models\\identitymodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\englishweb\\app_start\\filterconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|solutionrelative:englishweb\\app_start\\filterconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\englishweb\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|solutionrelative:englishweb\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\englishweb\\app_start\\startup.auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|solutionrelative:englishweb\\app_start\\startup.auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\englishweb\\app_start\\identityconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|solutionrelative:englishweb\\app_start\\identityconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\englishweb\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|solutionrelative:englishweb\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\englishweb\\views\\manage\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|solutionrelative:englishweb\\views\\manage\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\englishweb\\views\\manage\\verifyphonenumber.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|solutionrelative:englishweb\\views\\manage\\verifyphonenumber.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\englishweb\\views\\manage\\setpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|solutionrelative:englishweb\\views\\manage\\setpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\englishweb\\views\\manage\\addphonenumber.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|solutionrelative:englishweb\\views\\manage\\addphonenumber.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\englishweb\\content\\bootstrap-grid.rtl.min.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|solutionrelative:englishweb\\content\\bootstrap-grid.rtl.min.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\englishweb\\views\\lesson\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D14BA1E3-160F-4DB0-A9C5-7E835AD79684}|EnglishWeb\\EnglishWeb.csproj|solutionrelative:englishweb\\views\\lesson\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,28 +186,470 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserController .cs",
+              "DocumentMoniker": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Controllers\\UserController .cs",
+              "RelativeDocumentMoniker": "EnglishWeb\\Controllers\\UserController .cs",
+              "ToolTip": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Controllers\\UserController .cs",
+              "RelativeToolTip": "EnglishWeb\\Controllers\\UserController .cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAmwF4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T08:47:15.114Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Views\\History\\Index.cshtml",
+              "RelativeDocumentMoniker": "EnglishWeb\\Views\\History\\Index.cshtml",
+              "ToolTip": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Views\\History\\Index.cshtml",
+              "RelativeToolTip": "EnglishWeb\\Views\\History\\Index.cshtml",
+              "ViewState": "AgIAABYAAAAAAAAAAAAnwB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-24T02:47:22.561Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HistoryController.cs",
+              "DocumentMoniker": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Controllers\\HistoryController.cs",
+              "RelativeDocumentMoniker": "EnglishWeb\\Controllers\\HistoryController.cs",
+              "ToolTip": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Controllers\\HistoryController.cs",
+              "RelativeToolTip": "EnglishWeb\\Controllers\\HistoryController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAAB0AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T02:41:05.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "FlashCardController.cs",
+              "DocumentMoniker": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Controllers\\FlashCardController.cs",
+              "RelativeDocumentMoniker": "EnglishWeb\\Controllers\\FlashCardController.cs",
+              "ToolTip": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Controllers\\FlashCardController.cs",
+              "RelativeToolTip": "EnglishWeb\\Controllers\\FlashCardController.cs",
+              "ViewState": "AgIAALgAAAAAAAAAAAAIwMEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T06:46:41.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AddNewWord.cshtml",
+              "DocumentMoniker": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Views\\FlashCard\\AddNewWord.cshtml",
+              "RelativeDocumentMoniker": "EnglishWeb\\Views\\FlashCard\\AddNewWord.cshtml",
+              "ToolTip": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Views\\FlashCard\\AddNewWord.cshtml",
+              "RelativeToolTip": "EnglishWeb\\Views\\FlashCard\\AddNewWord.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-23T12:31:21.645Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "dbEnglish.dbml.layout",
+              "DocumentMoniker": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Models\\dbEnglish.dbml.layout",
+              "RelativeDocumentMoniker": "EnglishWeb\\Models\\dbEnglish.dbml.layout",
+              "ToolTip": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Models\\dbEnglish.dbml.layout",
+              "RelativeToolTip": "EnglishWeb\\Models\\dbEnglish.dbml.layout",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-23T12:08:50.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AddToFlashcard.cshtml",
+              "DocumentMoniker": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Views\\FlashCard\\AddToFlashcard.cshtml",
+              "RelativeDocumentMoniker": "EnglishWeb\\Views\\FlashCard\\AddToFlashcard.cshtml",
+              "ToolTip": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Views\\FlashCard\\AddToFlashcard.cshtml",
+              "RelativeToolTip": "EnglishWeb\\Views\\FlashCard\\AddToFlashcard.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAADwvxMAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-12T06:51:21.196Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Views\\FlashCard\\Index.cshtml",
+              "RelativeDocumentMoniker": "EnglishWeb\\Views\\FlashCard\\Index.cshtml",
+              "ToolTip": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Views\\FlashCard\\Index.cshtml",
+              "RelativeToolTip": "EnglishWeb\\Views\\FlashCard\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-09T07:33:01.294Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Views\\User\\Register.cshtml",
+              "RelativeDocumentMoniker": "EnglishWeb\\Views\\User\\Register.cshtml",
+              "ToolTip": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Views\\User\\Register.cshtml",
+              "RelativeToolTip": "EnglishWeb\\Views\\User\\Register.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-09T08:05:30.324Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Views\\User\\Login.cshtml",
+              "RelativeDocumentMoniker": "EnglishWeb\\Views\\User\\Login.cshtml",
+              "ToolTip": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Views\\User\\Login.cshtml",
+              "RelativeToolTip": "EnglishWeb\\Views\\User\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-09T08:05:29.254Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Lockout.cshtml",
+              "DocumentMoniker": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Views\\Shared\\Lockout.cshtml",
+              "RelativeDocumentMoniker": "EnglishWeb\\Views\\Shared\\Lockout.cshtml",
+              "ToolTip": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Views\\Shared\\Lockout.cshtml",
+              "RelativeToolTip": "EnglishWeb\\Views\\Shared\\Lockout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-09T08:05:27.582Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "EnglishWeb\\Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "EnglishWeb\\Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-09T08:05:08.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Views\\Vocabulary\\Edit.cshtml",
+              "RelativeDocumentMoniker": "EnglishWeb\\Views\\Vocabulary\\Edit.cshtml",
+              "ToolTip": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Views\\Vocabulary\\Edit.cshtml",
+              "RelativeToolTip": "EnglishWeb\\Views\\Vocabulary\\Edit.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-09T08:02:55.298Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Site.css",
+              "DocumentMoniker": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Content\\Site.css",
+              "RelativeDocumentMoniker": "EnglishWeb\\Content\\Site.css",
+              "ToolTip": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Content\\Site.css",
+              "RelativeToolTip": "EnglishWeb\\Content\\Site.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-06-09T07:59:31.145Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "dbEnglish.designer.cs",
+              "DocumentMoniker": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Models\\dbEnglish.designer.cs",
+              "RelativeDocumentMoniker": "EnglishWeb\\Models\\dbEnglish.designer.cs",
+              "ToolTip": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Models\\dbEnglish.designer.cs",
+              "RelativeToolTip": "EnglishWeb\\Models\\dbEnglish.designer.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAwwAMAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T07:39:38.344Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "EnglishWeb\\Views\\_ViewStart.cshtml",
+              "ToolTip": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "EnglishWeb\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-09T07:34:47.138Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "EnglishWeb\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "EnglishWeb\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAB1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-09T07:33:38.567Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Contact.cshtml",
+              "DocumentMoniker": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Views\\Home\\Contact.cshtml",
+              "RelativeDocumentMoniker": "EnglishWeb\\Views\\Home\\Contact.cshtml",
+              "ToolTip": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Views\\Home\\Contact.cshtml",
+              "RelativeToolTip": "EnglishWeb\\Views\\Home\\Contact.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-09T07:33:37.125Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Startup.Auth.cs",
+              "DocumentMoniker": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\App_Start\\Startup.Auth.cs",
+              "RelativeDocumentMoniker": "EnglishWeb\\App_Start\\Startup.Auth.cs",
+              "ToolTip": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\App_Start\\Startup.Auth.cs",
+              "RelativeToolTip": "EnglishWeb\\App_Start\\Startup.Auth.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T07:15:47.372Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "EnglishWeb\\Views\\Home\\About.cshtml",
+              "ToolTip": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Views\\Home\\About.cshtml",
+              "RelativeToolTip": "EnglishWeb\\Views\\Home\\About.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-09T07:06:58.296Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Web.config",
+              "DocumentMoniker": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Web.config",
+              "RelativeDocumentMoniker": "EnglishWeb\\Web.config",
+              "ToolTip": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Web.config",
+              "RelativeToolTip": "EnglishWeb\\Web.config",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-06-08T09:16:51.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "FilterConfig.cs",
+              "DocumentMoniker": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\App_Start\\FilterConfig.cs",
+              "RelativeDocumentMoniker": "EnglishWeb\\App_Start\\FilterConfig.cs",
+              "ToolTip": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\App_Start\\FilterConfig.cs",
+              "RelativeToolTip": "EnglishWeb\\App_Start\\FilterConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T11:01:12.86Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "RouteConfig.cs",
+              "DocumentMoniker": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\App_Start\\RouteConfig.cs",
+              "RelativeDocumentMoniker": "EnglishWeb\\App_Start\\RouteConfig.cs",
+              "ToolTip": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\App_Start\\RouteConfig.cs",
+              "RelativeToolTip": "EnglishWeb\\App_Start\\RouteConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T09:40:25.117Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "IdentityConfig.cs",
+              "DocumentMoniker": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\App_Start\\IdentityConfig.cs",
+              "RelativeDocumentMoniker": "EnglishWeb\\App_Start\\IdentityConfig.cs",
+              "ToolTip": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\App_Start\\IdentityConfig.cs",
+              "RelativeToolTip": "EnglishWeb\\App_Start\\IdentityConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T09:40:23.776Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "BundleConfig.cs",
+              "DocumentMoniker": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\App_Start\\BundleConfig.cs",
+              "RelativeDocumentMoniker": "EnglishWeb\\App_Start\\BundleConfig.cs",
+              "ToolTip": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\App_Start\\BundleConfig.cs",
+              "RelativeToolTip": "EnglishWeb\\App_Start\\BundleConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T09:40:22.691Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "VerifyPhoneNumber.cshtml",
+              "DocumentMoniker": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Views\\Manage\\VerifyPhoneNumber.cshtml",
+              "RelativeDocumentMoniker": "EnglishWeb\\Views\\Manage\\VerifyPhoneNumber.cshtml",
+              "ToolTip": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Views\\Manage\\VerifyPhoneNumber.cshtml",
+              "RelativeToolTip": "EnglishWeb\\Views\\Manage\\VerifyPhoneNumber.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-08T08:47:46.849Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "SetPassword.cshtml",
+              "DocumentMoniker": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Views\\Manage\\SetPassword.cshtml",
+              "RelativeDocumentMoniker": "EnglishWeb\\Views\\Manage\\SetPassword.cshtml",
+              "ToolTip": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Views\\Manage\\SetPassword.cshtml",
+              "RelativeToolTip": "EnglishWeb\\Views\\Manage\\SetPassword.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-08T08:47:44.876Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "ChangePassword.cshtml",
+              "DocumentMoniker": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Views\\Manage\\ChangePassword.cshtml",
+              "RelativeDocumentMoniker": "EnglishWeb\\Views\\Manage\\ChangePassword.cshtml",
+              "ToolTip": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Views\\Manage\\ChangePassword.cshtml",
+              "RelativeToolTip": "EnglishWeb\\Views\\Manage\\ChangePassword.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-08T08:47:43.061Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "AddPhoneNumber.cshtml",
+              "DocumentMoniker": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Views\\Manage\\AddPhoneNumber.cshtml",
+              "RelativeDocumentMoniker": "EnglishWeb\\Views\\Manage\\AddPhoneNumber.cshtml",
+              "ToolTip": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Views\\Manage\\AddPhoneNumber.cshtml",
+              "RelativeToolTip": "EnglishWeb\\Views\\Manage\\AddPhoneNumber.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-08T08:47:41.781Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Views\\Manage\\Index.cshtml",
+              "RelativeDocumentMoniker": "EnglishWeb\\Views\\Manage\\Index.cshtml",
+              "ToolTip": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Views\\Manage\\Index.cshtml",
+              "RelativeToolTip": "EnglishWeb\\Views\\Manage\\Index.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-08T08:47:40.49Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ManageViewModels.cs",
+              "DocumentMoniker": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Models\\ManageViewModels.cs",
+              "RelativeDocumentMoniker": "EnglishWeb\\Models\\ManageViewModels.cs",
+              "ToolTip": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Models\\ManageViewModels.cs",
+              "RelativeToolTip": "EnglishWeb\\Models\\ManageViewModels.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T08:47:30.331Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "IdentityModels.cs",
+              "DocumentMoniker": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Models\\IdentityModels.cs",
+              "RelativeDocumentMoniker": "EnglishWeb\\Models\\IdentityModels.cs",
+              "ToolTip": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Models\\IdentityModels.cs",
+              "RelativeToolTip": "EnglishWeb\\Models\\IdentityModels.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T08:47:29.115Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "AccountViewModels.cs",
+              "DocumentMoniker": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Models\\AccountViewModels.cs",
+              "RelativeDocumentMoniker": "EnglishWeb\\Models\\AccountViewModels.cs",
+              "ToolTip": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Models\\AccountViewModels.cs",
+              "RelativeToolTip": "EnglishWeb\\Models\\AccountViewModels.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T08:47:26.83Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "bootstrap-grid.rtl.min.css",
+              "DocumentMoniker": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Content\\bootstrap-grid.rtl.min.css",
+              "RelativeDocumentMoniker": "EnglishWeb\\Content\\bootstrap-grid.rtl.min.css",
+              "ToolTip": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Content\\bootstrap-grid.rtl.min.css",
+              "RelativeToolTip": "EnglishWeb\\Content\\bootstrap-grid.rtl.min.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-06-08T08:47:19.643Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "VocabularyController.cs",
+              "DocumentMoniker": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Controllers\\VocabularyController.cs",
+              "RelativeDocumentMoniker": "EnglishWeb\\Controllers\\VocabularyController.cs",
+              "ToolTip": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Controllers\\VocabularyController.cs",
+              "RelativeToolTip": "EnglishWeb\\Controllers\\VocabularyController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T08:47:17.004Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Th\u00E0nh Nam\\source\\repos\\EnglishWeb\\EnglishWeb\\Views\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "EnglishWeb\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Th\u00E0nh Nam\\source\\repos\\EnglishWeb\\EnglishWeb\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "EnglishWeb\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAACAAAAAAAAAAAAAAACwAAAALAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABcAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-06-06T14:24:47.961Z",
               "EditorCaption": ""
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 22,
               "Title": "Contact.cshtml",
-              "DocumentMoniker": "C:\\Users\\Th\u00E0nh Nam\\source\\repos\\EnglishWeb\\EnglishWeb\\Views\\Lesson\\Contact.cshtml",
+              "DocumentMoniker": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Views\\Lesson\\Contact.cshtml",
               "RelativeDocumentMoniker": "EnglishWeb\\Views\\Lesson\\Contact.cshtml",
-              "ToolTip": "C:\\Users\\Th\u00E0nh Nam\\source\\repos\\EnglishWeb\\EnglishWeb\\Views\\Lesson\\Contact.cshtml",
+              "ToolTip": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Views\\Lesson\\Contact.cshtml",
               "RelativeToolTip": "EnglishWeb\\Views\\Lesson\\Contact.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -75,11 +657,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 43,
               "Title": "About.cshtml",
-              "DocumentMoniker": "C:\\Users\\Th\u00E0nh Nam\\source\\repos\\EnglishWeb\\EnglishWeb\\Views\\Lesson\\About.cshtml",
+              "DocumentMoniker": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Views\\Lesson\\About.cshtml",
               "RelativeDocumentMoniker": "EnglishWeb\\Views\\Lesson\\About.cshtml",
-              "ToolTip": "C:\\Users\\Th\u00E0nh Nam\\source\\repos\\EnglishWeb\\EnglishWeb\\Views\\Lesson\\About.cshtml",
+              "ToolTip": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Views\\Lesson\\About.cshtml",
               "RelativeToolTip": "EnglishWeb\\Views\\Lesson\\About.cshtml",
               "ViewState": "AgIAAB0AAAAAAAAAAAAqwDgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -87,11 +669,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 27,
               "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\Th\u00E0nh Nam\\source\\repos\\EnglishWeb\\EnglishWeb\\Views\\Lesson\\Edit.cshtml",
+              "DocumentMoniker": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Views\\Lesson\\Edit.cshtml",
               "RelativeDocumentMoniker": "EnglishWeb\\Views\\Lesson\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\Th\u00E0nh Nam\\source\\repos\\EnglishWeb\\EnglishWeb\\Views\\Lesson\\Edit.cshtml",
+              "ToolTip": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Views\\Lesson\\Edit.cshtml",
               "RelativeToolTip": "EnglishWeb\\Views\\Lesson\\Edit.cshtml",
               "ViewState": "AgIAAAsAAAAAAAAAAAAqwCYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -99,23 +681,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 12,
               "Title": "LessonController.cs",
-              "DocumentMoniker": "C:\\Users\\Th\u00E0nh Nam\\source\\repos\\EnglishWeb\\EnglishWeb\\Controllers\\LessonController.cs",
+              "DocumentMoniker": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Controllers\\LessonController.cs",
               "RelativeDocumentMoniker": "EnglishWeb\\Controllers\\LessonController.cs",
-              "ToolTip": "C:\\Users\\Th\u00E0nh Nam\\source\\repos\\EnglishWeb\\EnglishWeb\\Controllers\\LessonController.cs",
+              "ToolTip": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Controllers\\LessonController.cs",
               "RelativeToolTip": "EnglishWeb\\Controllers\\LessonController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAqwBcAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-05T16:55:51.951Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 18,
               "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\Th\u00E0nh Nam\\source\\repos\\EnglishWeb\\EnglishWeb\\Views\\Lesson\\Details.cshtml",
+              "DocumentMoniker": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Views\\Lesson\\Details.cshtml",
               "RelativeDocumentMoniker": "EnglishWeb\\Views\\Lesson\\Details.cshtml",
-              "ToolTip": "C:\\Users\\Th\u00E0nh Nam\\source\\repos\\EnglishWeb\\EnglishWeb\\Views\\Lesson\\Details.cshtml",
+              "ToolTip": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Views\\Lesson\\Details.cshtml",
               "RelativeToolTip": "EnglishWeb\\Views\\Lesson\\Details.cshtml",
               "ViewState": "AgIAAA8AAAAAAAAAAAAqwCoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -123,39 +705,49 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 23,
               "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\Users\\Th\u00E0nh Nam\\source\\repos\\EnglishWeb\\EnglishWeb\\Views\\Lesson\\Delete.cshtml",
+              "DocumentMoniker": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Views\\Lesson\\Delete.cshtml",
               "RelativeDocumentMoniker": "EnglishWeb\\Views\\Lesson\\Delete.cshtml",
-              "ToolTip": "C:\\Users\\Th\u00E0nh Nam\\source\\repos\\EnglishWeb\\EnglishWeb\\Views\\Lesson\\Delete.cshtml",
+              "ToolTip": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Views\\Lesson\\Delete.cshtml",
               "RelativeToolTip": "EnglishWeb\\Views\\Lesson\\Delete.cshtml",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAqwCkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-06-05T16:50:17.047Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 19,
               "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\Th\u00E0nh Nam\\source\\repos\\EnglishWeb\\EnglishWeb\\Views\\Lesson\\Create.cshtml",
+              "DocumentMoniker": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Views\\Lesson\\Create.cshtml",
               "RelativeDocumentMoniker": "EnglishWeb\\Views\\Lesson\\Create.cshtml",
-              "ToolTip": "C:\\Users\\Th\u00E0nh Nam\\source\\repos\\EnglishWeb\\EnglishWeb\\Views\\Lesson\\Create.cshtml",
+              "ToolTip": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Views\\Lesson\\Create.cshtml",
               "RelativeToolTip": "EnglishWeb\\Views\\Lesson\\Create.cshtml",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAqwCYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAqwCYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-06-05T14:45:00.594Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 14,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Th\u00E0nh Nam\\source\\repos\\EnglishWeb\\EnglishWeb\\Views\\Lesson\\Index.cshtml",
+              "DocumentMoniker": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Views\\Lesson\\Index.cshtml",
               "RelativeDocumentMoniker": "EnglishWeb\\Views\\Lesson\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Th\u00E0nh Nam\\source\\repos\\EnglishWeb\\EnglishWeb\\Views\\Lesson\\Index.cshtml",
+              "ToolTip": "D:\\Git\\Project\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Views\\Lesson\\Index.cshtml",
               "RelativeToolTip": "EnglishWeb\\Views\\Lesson\\Index.cshtml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAAG0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-06-05T14:00:37.968Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
             }
           ]
         }

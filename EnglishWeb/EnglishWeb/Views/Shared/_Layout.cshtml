@@ -21,6 +21,8 @@
                     <li>@Html.ActionLink("Home", "Index", "Lesson", new { area = "" }, new { @class = "nav-link" })</li>
                     <li>@Html.ActionLink("About", "About", "Lesson", new { area = "" }, new { @class = "nav-link" })</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Lesson", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("Flashcard", "Index", "FlashCard", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("History", "Index", "History", new { area = "" }, new { @class = "nav-link" })</li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     @if (Session["User"] == null)
