@@ -107,7 +107,51 @@
               "RelativeToolTip": "EnglishWeb\\Controllers\\LessonController.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAqwBcAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+<<<<<<< Updated upstream
               "WhenOpened": "2025-06-05T16:55:51.951Z"
+=======
+              "WhenOpened": "2025-07-08T09:15:25.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AIAPI.cs",
+              "DocumentMoniker": "C:\\Users\\Th\u00E0nh Nam\\Downloads\\c#\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Models\\AIAPI.cs",
+              "RelativeDocumentMoniker": "EnglishWeb\\Models\\AIAPI.cs",
+              "ToolTip": "C:\\Users\\Th\u00E0nh Nam\\Downloads\\c#\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Models\\AIAPI.cs",
+              "RelativeToolTip": "EnglishWeb\\Models\\AIAPI.cs",
+              "ViewState": "AgIAAPwAAAAAAAAAAAAUwBMBAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T04:47:40.076Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PragraphController.cs",
+              "DocumentMoniker": "C:\\Users\\Th\u00E0nh Nam\\Downloads\\c#\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Controllers\\PragraphController.cs",
+              "RelativeDocumentMoniker": "EnglishWeb\\Controllers\\PragraphController.cs",
+              "ToolTip": "C:\\Users\\Th\u00E0nh Nam\\Downloads\\c#\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Controllers\\PragraphController.cs",
+              "RelativeToolTip": "EnglishWeb\\Controllers\\PragraphController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBQAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T09:13:21.973Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "VocabularyController.cs",
+              "DocumentMoniker": "C:\\Users\\Th\u00E0nh Nam\\Downloads\\c#\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Controllers\\VocabularyController.cs",
+              "RelativeDocumentMoniker": "EnglishWeb\\Controllers\\VocabularyController.cs",
+              "ToolTip": "C:\\Users\\Th\u00E0nh Nam\\Downloads\\c#\\WEBENGLISH\\EnglishWeb\\EnglishWeb\\Controllers\\VocabularyController.cs",
+              "RelativeToolTip": "EnglishWeb\\Controllers\\VocabularyController.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAwEMAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T05:38:04.698Z",
+              "EditorCaption": ""
+>>>>>>> Stashed changes
             },
             {
               "$type": "Document",
