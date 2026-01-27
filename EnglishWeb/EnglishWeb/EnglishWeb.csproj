@@ -18,7 +18,8 @@
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
-    <Use64BitIISExpress />
+    <Use64BitIISExpress>
+    </Use64BitIISExpress>
     <IISExpressSSLPort>44314</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -183,17 +184,18 @@
     <Compile Include="Controllers\UserController .cs" />
     <Compile Include="Controllers\LessonController.cs" />
     <Compile Include="Controllers\VocabularyController.cs" />
-    <Compile Include="Models\EnglishLearning.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EnglishLearning.dbml</DependentUpon>
-    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\AIAPI.cs" />
     <Compile Include="Models\DefinitionExampleResult.cs" />
+    <Compile Include="Models\EnglishLearning.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EnglishLearning.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GameReorderViewModel.cs" />
     <Compile Include="Models\GameViewModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\LessonViewModel.cs" />
@@ -224,6 +226,7 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="PythonModel\sentence.py" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -297,6 +300,8 @@
     <Content Include="Views\Vocabulary\CreateWithAI.cshtml" />
     <Content Include="Views\Pragraph\Index.cshtml" />
     <Content Include="Views\Grammar\Index.cshtml" />
+    <Content Include="Views\Game\PlayReorder.cshtml" />
+    <Content Include="Views\Game\ResultReorder.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

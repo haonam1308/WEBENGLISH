@@ -5,7 +5,8 @@ using System.Threading.Tasks;
 using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.IO;
-
+using System.Web.Hosting;
+using System.Web.Mvc;
 namespace EnglishWeb.Models
 {
 
@@ -18,7 +19,6 @@ namespace EnglishWeb.Models
             _deepSeekAI = new DeepSeekAI();
         }
 
-        // Hỏi đáp với AI
         public async Task<AIResponse> AskQuestionAsync(string question)
         {
             try
@@ -37,7 +37,6 @@ namespace EnglishWeb.Models
             }
         }
 
-        // Dịch thuật
         public async Task<AIResponse> TranslateAsync(string text, string direction)
         {
             try
@@ -94,37 +93,35 @@ namespace EnglishWeb.Models
 
             string response = await _deepSeekAI.AskQuestionAsync(prompt);
 
-            // 🪵 Ghi log đầy đủ để bạn biết AI trả về gì
             System.Diagnostics.Debug.WriteLine("AI RAW RESPONSE:\n" + response);
 
             try
             {
-                // 📦 Tìm đoạn JSON trong AI response
+          
                 var match = System.Text.RegularExpressions.Regex.Match(response, @"\{[\s\S]*?\}");
 
                 if (match.Success)
                 {
                     string json = match.Value;
 
-                    // ✅ Parse ra object
                     var result = JsonConvert.DeserializeObject<DefinitionExampleResult>(json);
 
-                    // Kiểm tra kết quả có hợp lệ không
+                   
                     if (!string.IsNullOrWhiteSpace(result?.Definition) && !string.IsNullOrWhiteSpace(result.Example))
                     {
                         return result;
                     }
                 }
 
-                // ❌ Nếu không thành công, ném lỗi để chuyển xuống catch
+             
                 throw new Exception("AI không trả về JSON hợp lệ.");
             }
             catch (Exception ex)
             {
-                // 🪵 Ghi lại lỗi
+         
                 System.Diagnostics.Debug.WriteLine("ERROR parsing AI response: " + ex.Message);
 
-                // 🚫 Không trả về mặc định "Definition of..." nữa
+     
                 return new DefinitionExampleResult
                 {
                     Definition = "AI error: Could not parse definition.",
@@ -150,7 +147,6 @@ namespace EnglishWeb.Models
             }
         }
 
-        // Tạo câu hỏi trắc nghiệm
         public async Task<AIResponse> GenerateQuizAsync(string topic, int numberOfQuestions = 5)
         {
             try
@@ -169,7 +165,7 @@ namespace EnglishWeb.Models
             }
         }
 
-        // Tạo đoạn văn tiếng Anh
+
         public async Task<AIResponse> GenerateEnglishParagraphAsync()
         {
             try
@@ -183,7 +179,7 @@ namespace EnglishWeb.Models
             }
         }
 
-        // Tạo đoạn văn tiếng Việt
+    
         public async Task<AIResponse> GenerateVietnameseParagraphAsync()
         {
             try
@@ -197,24 +193,83 @@ namespace EnglishWeb.Models
             }
         }
 
-        // So sánh bản dịch của người dùng với bản gốc
-        public async Task<AIResponse> CompareTranslationAsync(string originalText, string userTranslation, string originalType)
+        public async Task<AIResponse> CompareTranslationAsync(string originalText, string userTranslation)
         {
             try
             {
-                if (string.IsNullOrWhiteSpace(originalText) || string.IsNullOrWhiteSpace(userTranslation))
+                string sentence1 = originalText;
+                string sentence2 = userTranslation;
+
+                // BƯỚC 1: Dịch câu gốc
+                string translationPrompt = $"Hãy dịch chính xác câu sau sang tiếng còn lại như trong sách song ngữ:\n\"{sentence1}\" ,bắt buộc phải đúng như trong sách song ngữ, chỉ trả lời câu thôi không cần gì khác";
+                string translatedSentence1 = await _deepSeekAI.AskQuestionAsync(translationPrompt);
+
+                if (translatedSentence1.Contains("AI service") || translatedSentence1.Contains("Không nhận được"))
                 {
-                    return new AIResponse { Success = false, ErrorMessage = "Vui lòng cung cấp đầy đủ văn bản gốc và bản dịch!" };
+                    return new AIResponse { Success = false, ErrorMessage = "Không thể dịch câu gốc từ sách song ngữ." };
                 }
 
-                string comparison = await _deepSeekAI.CompareTranslationAsync(originalText, userTranslation, originalType);
-                return new AIResponse { Success = true, Content = comparison };
+                // BƯỚC 2: So sánh similarity
+                var httpClient = new HttpClient();
+                httpClient.Timeout = TimeSpan.FromSeconds(10);
+
+                var content = new StringContent(JsonConvert.SerializeObject(new
+                {
+                    sentence1 = translatedSentence1,
+                    sentence2 = sentence2
+                }), Encoding.UTF8, "application/json");
+
+                var response = await httpClient.PostAsync("http://localhost:5000/similarity", content);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var similarityResult = await response.Content.ReadAsStringAsync();
+
+                    if (similarityResult.TrimStart().StartsWith("{") && similarityResult.TrimEnd().EndsWith("}"))
+                    {
+                        dynamic json = JsonConvert.DeserializeObject(similarityResult);
+
+                        double score = json.score;
+                        string analysis = "";
+
+                        try
+                        {
+                            string analysisPrompt =
+          "You are an English-only translation reviewer. No matter what the input language is, always reply in English. Be brief and direct.\n\n" +
+          $"Original English sentence: \"{translatedSentence1}\"\n" +
+          $"User's Vietnamese translation: \"{sentence2}\"\n" +
+          "Evaluate how accurate the translation is. Highlight only major differences in meaning or tone. " +
+          "DO NOT explain in Vietnamese. Reply ONLY in English. Keep your answer under 3 sentences.";
+
+                            analysis = await _deepSeekAI.AskQuestionAsync(analysisPrompt);
+                        }
+                        catch
+                        {
+                            analysis = "Không thể phân tích nội dung.";
+                        }
+
+                        return new AIResponse
+                        {
+                            Success = true,
+                            Content = $"Similarity Result: {score}\n{translatedSentence1}\n{analysis}"
+                        };
+                    }
+                    else
+                    {
+                        return new AIResponse { Success = false, ErrorMessage = "Dữ liệu từ AI không hợp lệ." };
+                    }
+                }
+                else
+                {
+                    return new AIResponse { Success = false, ErrorMessage = "API similarity trả về lỗi: " + response.StatusCode };
+                }
             }
             catch (Exception ex)
             {
-                return new AIResponse { Success = false, ErrorMessage = ex.Message };
+                return new AIResponse { Success = false, ErrorMessage = "Lỗi hệ thống: " + ex.Message };
             }
         }
+
         public async Task<AIResponse> CheckGrammarAsyncdong(string sentence)
         {
             try
@@ -238,28 +293,30 @@ namespace EnglishWeb.Models
         }
     }
 
-    // Model cho response từ AI Service
     public class AIResponse
     {
         public bool Success { get; set; }
         public string Content { get; set; }
+
         public string ErrorMessage { get; set; }
     }
 
-    // Model cho definition và example
+
 
 
     public class DeepSeekAI
     {
-        private readonly string apiKey;
+        private readonly string apiKey = "sk-or-v1-59f1ce8bf051fa403adf61eecccbf853c60ecb243746eeb5d344e073913e1706zzx";
         private readonly string baseUrl;
         private readonly HttpClient httpClient;
 
         public DeepSeekAI()
         {
-            // Sử dụng OpenRouter API với key mới
-            this.apiKey = "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";
-            this.baseUrl = "https://openrouter.ai/api/v1";
+            // Đọc cấu hình từ file appsettings.json
+            var config = LoadConfiguration();
+            this.apiKey = config.ApiKey = "sk-or-v1-59f1ce8bf051fa403adf61eecccbf853c60ecb243746eeb5d344e073913e1706zzx";
+            this.baseUrl = config.BaseUrl;
+            
             this.httpClient = new HttpClient();
             this.httpClient.DefaultRequestHeaders.Add("Authorization", $"Bearer {apiKey}");
             this.httpClient.DefaultRequestHeaders.Add("HTTP-Referer", "https://localhost");
@@ -267,7 +324,36 @@ namespace EnglishWeb.Models
             this.httpClient.Timeout = TimeSpan.FromSeconds(30);
         }
 
-        // Hàm đưa vào câu hỏi và trả về câu trả lời
+        private ApiConfiguration LoadConfiguration()
+        {
+            try
+            {
+                string configPath = HostingEnvironment.MapPath("~/appsettings.json");
+                if (File.Exists(configPath))
+                {
+                    string json = File.ReadAllText(configPath);
+                    dynamic config = JsonConvert.DeserializeObject(json);
+                    return new ApiConfiguration
+                    {
+                        ApiKey = "sk-or-v1-59f1ce8bf051fa403adf61eecccbf853c60ecb243746eeb5d344e073913e1706zzx",
+                        BaseUrl = config.ApiSettings.OpenRouterBaseUrl
+                    };
+                }
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"Lỗi đọc config: {ex.Message}");
+            }
+
+            // Fallback nếu không đọc được config
+            return new ApiConfiguration
+            {
+                ApiKey = Environment.GetEnvironmentVariable("sk-or-v1-59f1ce8bf051fa403adf61eecccbf853c60ecb243746eeb5d344e073913e1706zzx") ?? "sk-or-v1-59f1ce8bf051fa403adf61eecccbf853c60ecb243746eeb5d344e073913e1706zzx",
+                BaseUrl = "https://openrouter.ai/api/v1"
+            };
+        }
+
+
         public async Task<string> AskQuestionAsync(string question)
         {
             System.Diagnostics.Debug.WriteLine("=== AskQuestionAsync START ===");
@@ -277,13 +363,13 @@ namespace EnglishWeb.Models
             {
                 var requestBody = new
                 {
-                    model = "deepseek/deepseek-chat-v3-0324:free",
+                    model = "openai/chatgpt-4o-latest",
                     messages = new[]
                     {
                         new { role = "user", content = question }
                     },
-                    max_tokens = 150, // Thu gọn max_tokens cho prompt ngắn
-                    temperature = 0.3 // Giảm temperature cho kết quả ổn định hơn
+                    max_tokens = 400,
+                    temperature = 0.3 
                 };
 
                 string jsonContent = JsonConvert.SerializeObject(requestBody);
@@ -317,8 +403,7 @@ namespace EnglishWeb.Models
                     string errorContent = await response.Content.ReadAsStringAsync();
                     System.Diagnostics.Debug.WriteLine($"API Error - Status: {response.StatusCode}, Content: {errorContent}");
 
-                    // Fallback to offline content if API fails
-                    return GetFallbackparagraph(question);
+                    return "AI service is temporarily unavailable.";
                 }
             }
             catch (Exception ex)
@@ -326,47 +411,19 @@ namespace EnglishWeb.Models
                 System.Diagnostics.Debug.WriteLine($"Exception in AskQuestionAsync: {ex.Message}");
                 System.Diagnostics.Debug.WriteLine($"Stack trace: {ex.StackTrace}");
 
-                // Fallback to offline content if API fails
-                return GetFallbackparagraph(question);
+                return "AI service is temporarily unavailable.";
             }
         }
 
-        private string GetFallbackparagraph(string question)
-        {
-            System.Diagnostics.Debug.WriteLine($"GetFallbackContent called with question containing: {question.Substring(0, Math.Min(200, question.Length))}");
 
-            // Check if this is a comparison request
-            if (question.Contains("So sánh và chấm điểm") || question.Contains("Gốc:") || question.Contains("Dịch:") || question.Contains("so sánh bản dịch"))
-            {
-                System.Diagnostics.Debug.WriteLine("Detected comparison request, using comparison fallback");
-                return @"<strong>📝 Nhận xét về bản dịch:</strong><br/>
-<strong>✅ Độ chính xác:</strong> Bản dịch của bạn thể hiện sự hiểu biết tốt về nội dung chính. Ý nghĩa tổng thể được truyền đạt rõ ràng và dễ hiểu.<br/>
-<strong>📚 Ngữ pháp & Từ vựng:</strong> Cấu trúc câu ổn, từ vựng phù hợp. Có thể cải thiện thêm về tính tự nhiên và độ mượt mà của câu văn.<br/>
-<strong>💡 Gợi ý:</strong> Hãy chú ý đến việc sử dụng từ nối và cấu trúc câu đa dạng hơn để bản dịch tự nhiên hơn.<br/>
-<strong>🎯 Đánh giá:</strong> 7.5/10 - Bản dịch tốt, tiếp tục luyện tập!<br/>
-<small><em>💭 Lưu ý: AI service tạm thời không khả dụng, đây là nhận xét tự động.</em></small>";
-            }
-            else if (question.ToLower().Contains("english") || question.ToLower().Contains("daily life") || question.ToLower().Contains("science"))
-            {
-                return GenerateFallbackEnglishParagraph();
-            }
-            else if (question.ToLower().Contains("việt") || question.ToLower().Contains("vietnamese"))
-            {
-                return GenerateFallbackVietnameseParagraph();
-            }
-            else
-            {
-                return "AI service is temporarily unavailable. Using fallback content.";
-            }
-        }
 
-        // Hàm gửi câu hỏi đơn giản (không async)
+   
         public string AskQuestion(string question)
         {
             return AskQuestionAsync(question).GetAwaiter().GetResult();
         }
 
-        // Hàm tạo câu trả lời cho học tiếng Anh
+  
         public async Task<string> GenerateEnglishResponseAsync(string topic, string level = "beginner")
         {
             string prompt = $"Tạo một bài học tiếng Anh về chủ đề '{topic}' cho người học ở trình độ {level}. " +
@@ -375,21 +432,19 @@ namespace EnglishWeb.Models
             return await AskQuestionAsync(prompt);
         }
 
-        // Hàm dịch từ tiếng Anh sang tiếng Việt
+
         public async Task<string> TranslateEnglishToVietnameseAsync(string englishText)
         {
             string prompt = $"Dịch đoạn văn sau từ tiếng Anh sang tiếng Việt: '{englishText}'";
             return await AskQuestionAsync(prompt);
         }
 
-        // Hàm dịch từ tiếng Việt sang tiếng Anh
         public async Task<string> TranslateVietnameseToEnglishAsync(string vietnameseText)
         {
             string prompt = $"Dịch đoạn văn sau từ tiếng Việt sang tiếng Anh: '{vietnameseText}'";
             return await AskQuestionAsync(prompt);
         }
 
-        // Hàm tạo câu hỏi trắc nghiệm
         public async Task<string> GenerateQuizAsync(string topic, int numberOfQuestions = 5)
         {
             string prompt = $"Tạo {numberOfQuestions} câu hỏi trắc nghiệm tiếng Anh về chủ đề '{topic}' " +
@@ -398,15 +453,19 @@ namespace EnglishWeb.Models
             return await AskQuestionAsync(prompt);
         }
 
-        // Hàm tạo đoạn văn 50 từ bằng tiếng Anh từ sách song ngữ
+
         public async Task<string> GenerateEnglishParagraphAsync()
         {
-            string prompt = "Write 30 words in English about education. Simple and interesting.";
+
+            string prompt = "Randomly select one paragraph (20–50 words) in English from any of the following bilingual chil" +
+                "dren's books: Little Red Riding Hood, The Tale of Peter Rabbit, Cinderella, The Three Little Pigs, The Frog Prince, Snow White, Jack and " +
+                "the Beanstalk, The Ugly Duckling, Pinocchio, books from Let’s Read – Asia Foundation. Output only the English paragraph—no translation, no explanation, no source.";
+            
 
             try
             {
                 string result = await AskQuestionAsync(prompt);
-                // Validate word count and return AI result if good, otherwise fallback
+
                 if (result.Contains("AI service") || result.Contains("Không nhận được"))
                 {
                     return GenerateFallbackEnglishParagraph();
@@ -436,15 +495,14 @@ namespace EnglishWeb.Models
 
             return await AskQuestionAsync(prompt);
         }
-        // Hàm tạo đoạn văn 50 từ bằng tiếng Việt từ sách song ngữ
+       
         public async Task<string> GenerateVietnameseParagraphAsync()
         {
-            string prompt = "Viết 30 từ tiếng Việt về giáo dục. Đơn giản và thú vị.";
+            string prompt = "Chọn ngẫu nhiên một đoạn văn tiếng Việt (20–50 từ) từ một trong các sách song ngữ sau: Cô Bé Quàng Khăn Đỏ, Câu chuyện về thỏ Peter, Cô bé Lọ Lem, Ba chú heo con, Hoàng tử Ếch, Bạch Tuyết, Jack và cây đậu thần, Vịt con xấu xí, Cậu bé người gỗ, hoặc các truyện trong Let’s Read – Asia Foundation. Chỉ in ra đoạn tiếng Việt — không dịch, không ghi nguồn, không giải thích.";
 
             try
             {
                 string result = await AskQuestionAsync(prompt);
-                // Validate and return AI result if good, otherwise fallback
                 if (result.Contains("AI service") || result.Contains("Không nhận được"))
                 {
                     return GenerateFallbackVietnameseParagraph();
@@ -457,105 +515,106 @@ namespace EnglishWeb.Models
             }
         }
 
-        // So sánh bản dịch của người dùng với văn bản gốc
-        public async Task<string> CompareTranslationAsync(string originalText, string userTranslation, string originalType)
+
+        public async Task<string> CompareTranslationAsync(string originalText, string userTranslation)
         {
-            System.Diagnostics.Debug.WriteLine("=== CompareTranslationAsync START ===");
-
-            string prompt = $@"So sánh và chấm điểm bản dịch:
-
-Gốc: {originalText}
-Dịch: {userTranslation}
-
-Đánh giá ngắn về độ chính xác, ngữ pháp, gợi ý cải thiện và cho điểm 1-10. Trả lời tiếng Việt.";
-
-            System.Diagnostics.Debug.WriteLine($"Prompt created: {prompt}");
-
             try
             {
-                System.Diagnostics.Debug.WriteLine("Calling AskQuestionAsync...");
-                string result = await AskQuestionAsync(prompt);
-                System.Diagnostics.Debug.WriteLine($"AskQuestionAsync returned: {result}");
+                string sentence1 = originalText;
+                string sentence2 = userTranslation;
 
-                // Fallback nếu AI service không hoạt động
-                if (string.IsNullOrWhiteSpace(result) ||
-                    result.Contains("AI service") ||
-                    result.Contains("Không nhận được") ||
-                    result.Contains("temporarily unavailable"))
+                // BƯỚC 1: Dịch câu gốc sang ngôn ngữ còn lại (vi dụ: tiếng Việt)
+                string translationPrompt = $"Hãy dịch chính xác câu sau sang tiếng còn lại như trong sách song ngữ:\n\"{sentence1}\" ,bắt buộc phải đúng như trong sách song ngữ, chỉ trả lời câu thôi không cần gì khác";
+                string translatedSentence1 = await AskQuestionAsync(translationPrompt);
+
+                if (translatedSentence1.Contains("AI service") || translatedSentence1.Contains("Không nhận được"))
                 {
-                    System.Diagnostics.Debug.WriteLine("Using fallback because AI result is invalid");
-                    return GetFallbackComparison(originalText, userTranslation, originalType);
+                    return JsonConvert.SerializeObject(new { error = "Không thể dịch câu gốc từ sách song ngữ." });
                 }
 
-                System.Diagnostics.Debug.WriteLine("Returning AI result");
-                return result;
-            }
-            catch (Exception ex)
-            {
-                System.Diagnostics.Debug.WriteLine($"Exception in CompareTranslationAsync: {ex.Message}");
-                return GetFallbackComparison(originalText, userTranslation, originalType);
-            }
-        }
+                // BƯỚC 2: So sánh similarity giữa bản dịch sách và bản dịch người dùng
+                var httpClient = new HttpClient();
+                httpClient.Timeout = TimeSpan.FromSeconds(10);
 
-        // Nhận xét mẫu khi AI service không khả dụng
-        private string GetFallbackComparison(string originalText, string userTranslation, string originalType)
-        {
-            System.Diagnostics.Debug.WriteLine("=== GetFallbackComparison called ===");
-            System.Diagnostics.Debug.WriteLine($"Original: {originalText}");
-            System.Diagnostics.Debug.WriteLine($"User: {userTranslation}");
-            System.Diagnostics.Debug.WriteLine($"Type: {originalType}");
-
-            // Tạo nhận xét cơ bản dựa trên độ dài và nội dung
-            string lengthComment = "";
-            string contentComment = "";
-            double score = 7.5;
-
-            if (!string.IsNullOrEmpty(originalText) && !string.IsNullOrEmpty(userTranslation))
-            {
-                int originalLength = originalText.Split(' ').Length;
-                int userLength = userTranslation.Split(' ').Length;
-                double lengthRatio = (double)userLength / originalLength;
-
-                if (lengthRatio > 1.5)
+                var content = new StringContent(JsonConvert.SerializeObject(new
                 {
-                    lengthComment = "Bản dịch hơi dài so với văn bản gốc. ";
-                    score -= 0.5;
-                }
-                else if (lengthRatio < 0.6)
+                    sentence1 = translatedSentence1,
+                    sentence2 = sentence2
+                }), Encoding.UTF8, "application/json");
+
+                var response = await httpClient.PostAsync("http://localhost:5000/similarity", content);
+
+                if (response.IsSuccessStatusCode)
                 {
-                    lengthComment = "Bản dịch hơi ngắn, có thể thiếu một số ý. ";
-                    score -= 0.8;
+                    var similarityResult = await response.Content.ReadAsStringAsync();
+
+                    if (similarityResult.TrimStart().StartsWith("{") && similarityResult.TrimEnd().EndsWith("}"))
+                    {
+                        dynamic json = JsonConvert.DeserializeObject(similarityResult);
+                        Console.WriteLine("Semantic similarity: " + json.score);
+
+                        // Gọi thêm AI để phân tích nội dung
+                        string analysisPrompt =
+         "You are an English-only translation reviewer. No matter what the input language is, always reply in English. Be brief and direct.\n\n" +
+         $"Original English sentence: \"{translatedSentence1}\"\n" +
+         $"User's Vietnamese translation: \"{sentence2}\"\n" +
+         "Evaluate how accurate the translation is. Highlight only major differences in meaning or tone. " +
+         "DO NOT explain in Vietnamese. Reply ONLY in English. Keep your answer under 3 sentences.";
+
+
+                        try
+                        {
+                            string analysis = await AskQuestionAsync(analysisPrompt);
+
+                            string analysis1 = json.analysis;
+                            double score = json.score;
+                            
+                            var AIResponse = new
+                            {
+                                Success = true,
+                                Content = $"Similarity Result: {score}\n\n\n{analysis1}"
+                            };
+                            string result = AIResponse.Content;
+                            return result;
+                        }
+                        catch
+                        {
+                            return JsonConvert.SerializeObject(new
+                            {
+                                score = json.score,
+                                analysis = GenerateFallbackVietnameseParagraph()
+                            });
+                        }
+                    }
+                    else
+                    {
+                        return JsonConvert.SerializeObject(new { error = "Model đang lỗi: API trả về dữ liệu không hợp lệ" });
+                    }
                 }
                 else
                 {
-                    lengthComment = "Độ dài bản dịch phù hợp. ";
-                    score += 0.3;
-                }
-
-                // Check for some basic keywords
-                if (originalType?.ToLower() == "english" && userTranslation.Contains("the") && userTranslation.Contains("a"))
-                {
-                    contentComment = "Có thể cần chú ý về mạo từ trong tiếng Việt. ";
-                    score -= 0.2;
-                }
-                else if (originalType?.ToLower() == "vietnamese" && !userTranslation.Contains("."))
-                {
-                    contentComment = "Cần chú ý về dấu câu trong tiếng Anh. ";
-                    score -= 0.3;
+                    return JsonConvert.SerializeObject(new { error = $"Model đang lỗi: API trả về mã lỗi {response.StatusCode}" });
                 }
             }
+            catch (Exception ex)
+            {
+                return JsonConvert.SerializeObject(new { error = $"Lỗi khi thực hiện quy trình so sánh: {ex.Message}" });
+            }
 
-            score = Math.Max(6.0, Math.Min(9.0, score)); // Keep score between 6-9
 
-            return $@"<strong>📝 Nhận xét về bản dịch:</strong><br/>
-<strong>✅ Độ chính xác:</strong> {lengthComment}Bản dịch của bạn thể hiện sự hiểu biết về nội dung chính. Ý nghĩa tổng thể được truyền đạt rõ ràng.<br/>
-<strong>📚 Ngữ pháp & Từ vựng:</strong> {contentComment}Cấu trúc câu ổn định, từ vựng phù hợp với ngữ cảnh. Có thể cải thiện thêm về tính tự nhiên của câu văn.<br/>
-<strong>💡 Gợi ý:</strong> Hãy chú ý đến việc sử dụng từ nối, cụm từ thành ngữ và cấu trúc câu đa dạng hơn để bản dịch trở nên tự nhiên và mượt mà hơn.<br/>
-<strong>🎯 Đánh giá:</strong> {score:F1}/10 - Bản dịch {(score >= 8 ? "rất tốt" : score >= 7 ? "tốt" : "khá ổn")}, tiếp tục luyện tập để cải thiện!<br/>
-<small><em>💭 Lưu ý: AI service tạm thời không khả dụng, đây là nhận xét phân tích cơ bản.</em></small>";
         }
 
-        // Nội dung mẫu tiếng Anh - Bank mở rộng 25 đoạn văn
+
+        private string WrapForTranslator(string content)
+        {
+  
+            return $@"<div class='translatable-content ai-response-content' style='line-height: 1.8; padding: 10px;'>
+                {content.Replace("\n", "<br>").Replace("\r", "")}
+            </div>";
+        }
+
+
+
         private string GenerateFallbackEnglishParagraph()
         {
             var samples = new[]
@@ -591,7 +650,7 @@ Dịch: {userTranslation}
             return samples[random.Next(samples.Length)];
         }
 
-        // Nội dung mẫu tiếng Việt - Bank mở rộng 25 đoạn văn
+
         private string GenerateFallbackVietnameseParagraph()
         {
             var samples = new[]
@@ -626,7 +685,7 @@ Dịch: {userTranslation}
             var random = new Random();
             return samples[random.Next(samples.Length)];
         }
-        // tự tạo vocabulary từ keyword cảu lesson 
+
         public async Task<List<string>> GenerateVocabularyListAsync(string topic, int numberOfWords = 10)
         {
             string prompt = $"Liệt kê {numberOfWords} từ vựng tiếng Anh phổ biến về chủ đề '{topic}', chỉ hiển thị mỗi từ, không thêm giải thích.";
@@ -654,7 +713,6 @@ Dịch: {userTranslation}
         }
     }
 
-    // Classes để deserialize response từ API
     public class DeepSeekResponse
     {
         public string id { get; set; }
@@ -683,5 +741,11 @@ Dịch: {userTranslation}
         public int prompt_tokens { get; set; }
         public int completion_tokens { get; set; }
         public int total_tokens { get; set; }
+    }
+
+    public class ApiConfiguration
+    {
+        public string ApiKey { get; set; }
+        public string BaseUrl { get; set; }
     }
 }

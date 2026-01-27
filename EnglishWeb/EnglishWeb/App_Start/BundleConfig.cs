@@ -22,9 +22,16 @@ namespace EnglishWeb
             bundles.Add(new Bundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js"));
 
+            // Add translator bundle
+            bundles.Add(new ScriptBundle("~/bundles/translator").Include(
+                      "~/Scripts/translator.js"));
+
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/site.min.css"));
+
+            // Enable optimizations for better performance
+            BundleTable.EnableOptimizations = true;
         }
     }
 }
